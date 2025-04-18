@@ -1,0 +1,125 @@
+Configuration:
+  status: warn
+
+  properties:
+    property:
+      - name: LOG_PATH
+        value: logs
+      #        value: /application/genai/genai_ks/genaiksapi/logs/APIlogs
+      - name: PROJECT_NAME
+        value: GenaiCodeBooster
+
+  appenders:
+    Console:
+      name: ConsoleAppender
+      target: SYSTEM_OUT
+      PatternLayout:
+        disableAnsi: false   # 색상 적용
+        charset: UTF-8
+        pattern: "%highlight([%-5level]) %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+
+    RollingFile:
+      - name: RollingFileAppender
+        fileName: ${LOG_PATH}/${PROJECT_NAME}.log
+        filePattern: ${LOG_PATH}/${PROJECT_NAME}-%d{yyyy-MM-dd}-%i.log.gz
+        PatternLayout:
+          disableAnsi: true  # 색상 제거
+          charset: UTF-8
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
+          TimeBasedTriggeringPolicy:
+            interval: 1
+            modulate: true
+          SizeBasedTriggeringPolicy:
+            size: "10MB"
+        DefaultRolloverStrategy:
+          max: 30
+
+      - name: WarnRollingFileAppender
+        fileName: ${LOG_PATH}/${PROJECT_NAME}_warn.log
+        filePattern: ${LOG_PATH}/${PROJECT_NAME}_error-%d{yyyy-MM-dd}-%i.log
+        PatternLayout:
+          disableAnsi: true
+          charset: UTF-8
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} %throwable{short} - %msg%n"
+        Filters:
+          - LevelMatchFilter:
+              level: WARN
+              onMatch: ACCEPT
+              onMismatch: DENY
+        Policies:
+          TimeBasedTriggeringPolicy:
+            interval: 1
+            modulate: true
+          SizeBasedTriggeringPolicy:
+            size: "10MB"
+        DefaultRolloverStrategy:
+          max: 5
+
+      - name: ErrorRollingFileAppender
+        fileName: ${LOG_PATH}/${PROJECT_NAME}_error.log
+        filePattern: ${LOG_PATH}/${PROJECT_NAME}_error-%d{yyyy-MM-dd}-%i.log
+        PatternLayout:
+          disableAnsi: true
+          charset: UTF-8
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} %throwable{short} - %msg%n"
+        Filters:
+          - ThresholdFilter:
+              level: ERROR
+              onMatch: ACCEPT
+              onMismatch: DENY
+        Policies:
+          TimeBasedTriggeringPolicy:
+            interval: 1
+            modulate: true
+          SizeBasedTriggeringPolicy:
+            size: "10MB"
+        DefaultRolloverStrategy:
+          max: 5
+
+    # 비동기설정
+    Async:
+      name: AsyncAppender
+      appenderRef:
+        - ref: RollingFileAppender
+
+  # 로그 모니터링 도구 연동(ELK 스택, Splunk, Graylo)
+  #    Syslog:
+  #      name: SyslogAppender
+  #      host: localhost
+  #      port: 514
+  #      protocol: UDP
+  #      format: RFC5424
+
+  loggers:
+    root:
+      level: INFO
+      AppenderRef:
+        - ref: ConsoleAppender
+        - ref: RollingFileAppender
+        - ref: ErrorRollingFileAppender
+          Filters: # sysc라 이중 필터링
+            - LevelMatchFilter:
+                level: ERROR
+                onMatch: ACCEPT
+                onMismatch: DENY
+
+    logger:
+      - name: io.iteyes
+        level: DEBUG
+        additivity: false
+        AppenderRef:
+          - ref: ConsoleAppender
+          - ref: RollingFileAppender
+          - ref: WarnRollingFileAppender
+            Filters: # sysc라 이중 필터링
+              - LevelMatchFilter:
+                  level: WARN
+                  onMatch: ACCEPT
+                  onMismatch: DENY
+          - ref: ErrorRollingFileAppender
+            Filters: # sysc라 이중 필터링
+              - LevelMatchFilter:
+                  level: ERROR
+                  onMatch: ACCEPT
+                  onMismatch: DENY

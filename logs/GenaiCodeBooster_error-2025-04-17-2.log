@@ -1,0 +1,12 @@
+[WARN ] 2025-04-17 09:07:05.531 [http-nio-48080-exec-9] ChatController  - AI 응답 없음 → 저장 생략
+[WARN ] 2025-04-17 09:08:53.017 [http-nio-48080-exec-5] ChatController  - AI 응답 없음 → 저장 생략
+[WARN ] 2025-04-17 10:55:30.455 [http-nio-48080-exec-4] MemberController  - 로그인 실패 - 잘못된 자격증명: dwqwe232
+[WARN ] 2025-04-17 11:29:33.838 [http-nio-48080-exec-3] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 11:29:45.370 [http-nio-48080-exec-4] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 11:30:33.094 [http-nio-48080-exec-7] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 11:31:33.951 [http-nio-48080-exec-8] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 13:01:06.471 [http-nio-48080-exec-1] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 13:02:35.943 [http-nio-48080-exec-5] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 13:04:13.859 [http-nio-48080-exec-4] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 13:05:02.019 [http-nio-48080-exec-10] MemberController  - 로그인 실패 - 잘못된 자격증명: ljun0903
+[WARN ] 2025-04-17 18:19:26.931 [http-nio-48080-exec-8] ChatController  - AI 응답 없음 → 저장 생략
