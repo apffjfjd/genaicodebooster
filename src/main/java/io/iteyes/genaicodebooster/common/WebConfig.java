@@ -1,9 +1,10 @@
 package io.iteyes.genaicodebooster.common;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.core.task.TaskExecutor;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+import org.springframework.web.servlet.config.annotation.*;
 
 /**
  * 이 클래스는 Spring MVC의 설정을 커스터마이즈하기 위해 사용됩니다.
@@ -18,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * </p>
  */
 @Configuration
+@EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
     private final LoggingInterceptor loggingInterceptor;
@@ -25,6 +27,23 @@ public class WebConfig implements WebMvcConfigurer {
     public WebConfig(LoggingInterceptor loggingInterceptor) {
         this.loggingInterceptor = loggingInterceptor;
     }
+
+    @Bean(name = "mvcTaskExecutor")
+    public TaskExecutor mvcTaskExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.setThreadNamePrefix("mvc-stream-");
+        executor.setCorePoolSize(4);
+        executor.setMaxPoolSize(10);
+        executor.setQueueCapacity(100);
+        executor.initialize();
+        return executor;
+    }
+
+//    @Override
+//    public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
+//        configurer.setTaskExecutor(mvcTaskExecutor());
+//        configurer.setDefaultTimeout(30_000); // optional: 기본 타임아웃 설정
+//    }
 
     /**
      * 인터셉터를 등록합니다.
@@ -35,7 +54,12 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loggingInterceptor)
                 .addPathPatterns("/**")
-                .excludePathPatterns("**/healthcheck/**", "**/swagger-ui/**");
+                .excludePathPatterns(
+                        "**/healthcheck/**",
+                        "**/swagger-ui/**",
+                        "/api/chat/text",
+                        "/api/chat/stream"
+                );
     }
 
     /**

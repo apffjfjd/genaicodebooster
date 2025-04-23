@@ -1,3 +1,27 @@
+# Gradle wrapper
 /gradlew text eol=lf
+/gradlew.bat text eol=crlf
+
+# Scripts
+*.sh text eol=lf
 *.bat text eol=crlf
+
+# Source files
+*.java text eol=lf
+*.kt text eol=lf
+*.groovy text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.properties text eol=lf
+*.md text eol=lf
+*.gitignore text eol=lf
+
+# Binaries
 *.jar binary
+*.class binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

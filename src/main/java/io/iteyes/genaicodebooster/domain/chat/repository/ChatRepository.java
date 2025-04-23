@@ -15,4 +15,8 @@ public interface ChatRepository extends JpaRepository<Chat, Long> {
             LocalDateTime before,
             Pageable pageable
     );
+
+    void deleteAllByChatRoom_Id(Long chatRoomId);
+
+
 }

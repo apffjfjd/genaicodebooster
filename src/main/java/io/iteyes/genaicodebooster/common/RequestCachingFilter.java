@@ -10,6 +10,7 @@ import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 
 import java.io.IOException;
+import java.util.stream.Stream;
 
 @Component
 public class RequestCachingFilter extends OncePerRequestFilter {
@@ -28,4 +29,13 @@ public class RequestCachingFilter extends OncePerRequestFilter {
             wrappedResponse.copyBodyToResponse();
         }
     }
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        String uri = request.getRequestURI();
+        return Stream.of("/api/chat/text", "/api/chat/stream", "/api/askstream")
+                .anyMatch(uri::startsWith);
+
+    }
+
 }
