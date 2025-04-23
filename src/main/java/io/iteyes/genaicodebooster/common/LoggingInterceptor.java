@@ -59,7 +59,12 @@ public class LoggingInterceptor implements HandlerInterceptor {
      */
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws IOException {
-        if (request instanceof ContentCachingRequestWrapper && response instanceof ContentCachingResponseWrapper) {
+
+        String contentType = response.getContentType();
+        boolean isStreaming = contentType != null &&
+                (contentType.contains("application/x-ndjson") || contentType.contains("text/event-stream"));
+
+        if (!isStreaming && request instanceof ContentCachingRequestWrapper && response instanceof ContentCachingResponseWrapper) {
             logResponse((ContentCachingRequestWrapper) request, (ContentCachingResponseWrapper) response);
             // 캐싱된 응답 데이터를 클라이언트로 복사
             ((ContentCachingResponseWrapper) response).copyBodyToResponse();

@@ -3,6 +3,12 @@
 #
 server:
   port: 48080
+  http2:
+    enabled: false
+  tomcat:
+    response-buffer-size: 1
+  compression:
+    enabled: false
 #  servlet:
 #    context-path: /api
 
@@ -16,6 +22,10 @@ spring:
   #profile
   profiles:
     active: "${profile}"
+#  webflux:
+#    hiddenmethod:
+#      filter:
+#        enabled: false
 
   #DB
   datasource:
