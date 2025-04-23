@@ -1,6 +1,0 @@
-[WARN ] 2025-04-23 13:23:15.519 [http-nio-48080-exec-1] ChatRoomController  - 채팅창 삭제 실패 - ID 존재하지 않음: 2
-[WARN ] 2025-04-23 13:23:15.626 [http-nio-48080-exec-2] ChatRoomController  - 채팅창 삭제 실패 - ID 존재하지 않음: 2
-[WARN ] 2025-04-23 13:26:47.050 [http-nio-48080-exec-7] ChatRoomController  - 채팅창 삭제 완료: 2
-[WARN ] 2025-04-23 13:26:47.050 [http-nio-48080-exec-7] ChatRoomController  - 채팅창 삭제 실패 - ID 존재하지 않음: 2
-[WARN ] 2025-04-23 13:26:53.085 [http-nio-48080-exec-5] ChatRoomController  - 채팅창 삭제 완료: 3
-[WARN ] 2025-04-23 13:26:53.086 [http-nio-48080-exec-5] ChatRoomController  - 채팅창 삭제 실패 - ID 존재하지 않음: 3
