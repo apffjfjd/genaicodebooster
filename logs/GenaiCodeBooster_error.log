@@ -1,114 +1,281 @@
-[ERROR] 2025-04-18 11:03:42.481 [http-nio-48080-exec-3] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 11:03:42.524 [http-nio-48080-exec-3] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 11:04:14.530 [http-nio-48080-exec-8] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 11:04:14.531 [http-nio-48080-exec-8] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 13:59:40.421 [http-nio-48080-exec-2] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 13:59:40.427 [http-nio-48080-exec-2] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 14:08:57.574 [http-nio-48080-exec-4] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 14:08:57.576 [http-nio-48080-exec-4] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 14:25:40.459 [http-nio-48080-exec-1] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
-[ERROR] 2025-04-18 14:26:35.602 [http-nio-48080-exec-5] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
-[ERROR] 2025-04-18 14:26:48.588 [http-nio-48080-exec-1] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
-[ERROR] 2025-04-18 14:27:27.536 [http-nio-48080-exec-5] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
-[ERROR] 2025-04-18 14:28:01.588 [http-nio-48080-exec-1] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 14:28:01.596 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 14:34:52.995 [http-nio-48080-exec-1] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 14:35:09.772 [http-nio-48080-exec-2] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 14:35:21.295 [http-nio-48080-exec-3] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 14:35:39.335 [http-nio-48080-exec-4] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 14:36:05.064 [http-nio-48080-exec-10] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 15:35:34.563 [http-nio-48080-exec-6] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 15:46:55.167 [http-nio-48080-exec-4] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
-	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
-[ERROR] 2025-04-18 16:08:55.878 [http-nio-48080-exec-10] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 16:08:55.888 [http-nio-48080-exec-10] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 16:23:15.913 [http-nio-48080-exec-1] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 16:23:15.915 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 16:23:58.800 [http-nio-48080-exec-3] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 16:23:58.801 [http-nio-48080-exec-3] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 16:30:37.614 [http-nio-48080-exec-1] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 16:30:37.615 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 16:31:40.131 [http-nio-48080-exec-10] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 16:31:40.132 [http-nio-48080-exec-10] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 16:32:03.967 [http-nio-48080-exec-8] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 16:32:03.969 [http-nio-48080-exec-8] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
-[ERROR] 2025-04-18 17:16:34.772 [http-nio-48080-exec-4] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
-	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
-[ERROR] 2025-04-18 17:16:49.680 [http-nio-48080-exec-9] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
-	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
-[ERROR] 2025-04-18 17:17:42.409 [http-nio-48080-exec-5] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
-	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
-[ERROR] 2025-04-18 17:18:51.697 [http-nio-48080-exec-7] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
-	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
-[ERROR] 2025-04-18 17:28:06.777 [http-nio-48080-exec-7] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-[ERROR] 2025-04-18 17:28:06.778 [http-nio-48080-exec-7] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
-delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
-delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-23 09:55:22.939 [http-nio-48080-exec-1] SqlExceptionHelper  - Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+[ERROR] 2025-04-23 09:55:22.956 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]] [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]; SQL [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]] with root cause
+[ERROR] 2025-04-23 09:55:30.147 [http-nio-48080-exec-2] SqlExceptionHelper  - Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+[ERROR] 2025-04-23 09:55:30.150 [http-nio-48080-exec-2] [dispatcherServlet] org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]] [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]; SQL [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]] with root cause
+[ERROR] 2025-04-23 09:56:09.988 [http-nio-48080-exec-4] SqlExceptionHelper  - Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+[ERROR] 2025-04-23 09:56:09.990 [http-nio-48080-exec-4] [dispatcherServlet] org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]] [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]; SQL [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]] with root cause
+[ERROR] 2025-04-23 09:56:25.502 [http-nio-48080-exec-9] SqlExceptionHelper  - Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+[ERROR] 2025-04-23 09:56:25.503 [http-nio-48080-exec-9] [dispatcherServlet] org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]] [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]; SQL [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]] with root cause
+[ERROR] 2025-04-23 09:56:36.213 [http-nio-48080-exec-10] SqlExceptionHelper  - Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+[ERROR] 2025-04-23 09:56:36.214 [http-nio-48080-exec-10] [dispatcherServlet] org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "chat" not found; SQL statement:
+    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+ [42102-232]] [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]; SQL [    SELECT cr.*
+    FROM chat_rooms cr
+    JOIN (
+        SELECT chat_room_id, MAX(created_at) AS last_chat_time
+        FROM chat
+        GROUP BY chat_room_id
+    ) latest ON cr.id = latest.chat_room_id
+    WHERE cr.member_id = ?
+    ORDER BY latest.last_chat_time DESC
+]] with root cause
+[ERROR] 2025-04-23 11:16:44.504 [http-nio-48080-exec-6] [dispatcherServlet] jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:304) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+[ERROR] 2025-04-23 11:17:21.333 [http-nio-48080-exec-5] [dispatcherServlet] jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:304) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+[ERROR] 2025-04-23 13:21:28.390 [http-nio-48080-exec-6] [dispatcherServlet] jakarta.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:304) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call] with root cause
+[ERROR] 2025-04-23 13:23:19.868 [http-nio-48080-exec-4] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 14:24:45.837 [http-nio-48080-exec-7] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 15:20:01.003 [http-nio-48080-exec-4] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 15:38:13.420 [http-nio-48080-exec-1] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 15:59:38.487 [http-nio-48080-exec-7] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 16:12:24.978 [http-nio-48080-exec-2] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 16:12:24.978 [http-nio-48080-exec-3] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 16:12:25.785 [http-nio-48080-exec-4] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:39) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-23 16:24:35.838 [ForkJoinPool.commonPool-worker-1] ChatController java.lang.IllegalStateException: ResponseBodyEmitter has already completed
+	at org.springframework.util.Assert.state(Assert.java:101) - 스트리밍 오류
+[ERROR] 2025-04-23 16:25:32.919 [ForkJoinPool.commonPool-worker-1] ChatController java.lang.IllegalStateException: ResponseBodyEmitter has already completed
+	at org.springframework.util.Assert.state(Assert.java:101) - 스트리밍 오류

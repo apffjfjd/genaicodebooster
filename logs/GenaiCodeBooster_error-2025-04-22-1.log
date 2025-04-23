@@ -1,0 +1,23 @@
+[ERROR] 2025-04-22 10:46:57.008 [http-nio-48080-exec-8] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(5 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-22 10:46:57.028 [http-nio-48080-exec-8] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(5 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(5 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(5 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-22 15:22:12.749 [http-nio-48080-exec-2] [dispatcherServlet] java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatRoomController.lambda$create$0(ChatRoomController.java:35) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 존재하지 않는 멤버입니다.] with root cause
+[ERROR] 2025-04-22 16:27:27.572 [restartedMain] LoggingFailureAnalysisReporter  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'requestMappingHandlerMapping', defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class], could not be registered. A bean with that name has already been defined in org.springframework.web.reactive.config.DelegatingWebFluxConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+

@@ -1,0 +1,114 @@
+[ERROR] 2025-04-18 11:03:42.481 [http-nio-48080-exec-3] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 11:03:42.524 [http-nio-48080-exec-3] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 11:04:14.530 [http-nio-48080-exec-8] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 11:04:14.531 [http-nio-48080-exec-8] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 13:59:40.421 [http-nio-48080-exec-2] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 13:59:40.427 [http-nio-48080-exec-2] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(6 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 14:08:57.574 [http-nio-48080-exec-4] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 14:08:57.576 [http-nio-48080-exec-4] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 14:25:40.459 [http-nio-48080-exec-1] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
+[ERROR] 2025-04-18 14:26:35.602 [http-nio-48080-exec-5] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
+[ERROR] 2025-04-18 14:26:48.588 [http-nio-48080-exec-1] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
+[ERROR] 2025-04-18 14:27:27.536 [http-nio-48080-exec-5] AiService org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8000/ask": Connection refused: connect
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) - AI 서버 호출 실패
+[ERROR] 2025-04-18 14:28:01.588 [http-nio-48080-exec-1] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 14:28:01.596 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(7 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 14:34:52.995 [http-nio-48080-exec-1] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 14:35:09.772 [http-nio-48080-exec-2] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 14:35:21.295 [http-nio-48080-exec-3] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 14:35:39.335 [http-nio-48080-exec-4] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 14:36:05.064 [http-nio-48080-exec-10] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 15:35:34.563 [http-nio-48080-exec-6] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 15:46:55.167 [http-nio-48080-exec-4] ChatController java.lang.IllegalArgumentException: 존재하지 않는 채팅방입니다.
+	at io.iteyes.genaicodebooster.api.controller.ChatController.lambda$createChat$0(ChatController.java:57) - 채팅 생성 중 오류 발생
+[ERROR] 2025-04-18 16:08:55.878 [http-nio-48080-exec-10] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 16:08:55.888 [http-nio-48080-exec-10] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 16:23:15.913 [http-nio-48080-exec-1] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 16:23:15.915 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 16:23:58.800 [http-nio-48080-exec-3] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 16:23:58.801 [http-nio-48080-exec-3] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 16:30:37.614 [http-nio-48080-exec-1] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 16:30:37.615 [http-nio-48080-exec-1] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(1 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 16:31:40.131 [http-nio-48080-exec-10] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 16:31:40.132 [http-nio-48080-exec-10] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 16:32:03.967 [http-nio-48080-exec-8] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 16:32:03.969 [http-nio-48080-exec-8] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause
+[ERROR] 2025-04-18 17:16:34.772 [http-nio-48080-exec-4] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
+[ERROR] 2025-04-18 17:16:49.680 [http-nio-48080-exec-9] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
+[ERROR] 2025-04-18 17:17:42.409 [http-nio-48080-exec-5] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
+[ERROR] 2025-04-18 17:18:51.697 [http-nio-48080-exec-7] AiService org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://192.168.0.145:8000/ask": "Internal Server Error"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102) - AI 서버 호출 실패
+[ERROR] 2025-04-18 17:28:06.777 [http-nio-48080-exec-7] SqlExceptionHelper  - Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+[ERROR] 2025-04-18 17:28:06.778 [http-nio-48080-exec-7] [dispatcherServlet] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT))"; SQL statement:
+delete from chat_rooms where id=? [23503-232]] [delete from chat_rooms where id=?]; SQL [delete from chat_rooms where id=?]; constraint [fk23gnfyyutie4dxee1pbby5nfi: public.chats FOREIGN KEY(chat_room_id) REFERENCES public.chat_rooms(id) (CAST(2 AS BIGINT)); SQL statement:
+delete from chat_rooms where id=? [23503-232]]] with root cause

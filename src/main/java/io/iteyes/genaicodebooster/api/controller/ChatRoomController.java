@@ -2,7 +2,9 @@ package io.iteyes.genaicodebooster.api.controller;
 
 import io.iteyes.genaicodebooster.api.model.ChatRoomCreateReqDto;
 import io.iteyes.genaicodebooster.api.model.ChatRoomListResDto;
+import io.iteyes.genaicodebooster.api.service.ChatRoomService;
 import io.iteyes.genaicodebooster.domain.chat.entity.ChatRoom;
+import io.iteyes.genaicodebooster.domain.chat.repository.ChatRepository;
 import io.iteyes.genaicodebooster.domain.chat.repository.ChatRoomRepository;
 import io.iteyes.genaicodebooster.domain.member.entity.Member;
 import io.iteyes.genaicodebooster.domain.member.repository.MemberRepository;
@@ -24,6 +26,8 @@ public class ChatRoomController {
 
     private final ChatRoomRepository chatRoomRepository;
     private final MemberRepository memberRepository;
+    private final ChatRepository chatRepository;
+    private final ChatRoomService chatRoomService;
 
     // 채팅창 생성
     @Operation(
@@ -47,13 +51,8 @@ public class ChatRoomController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         logger.debug("채팅창 삭제 요청 - ID: {}", id);
-        if (chatRoomRepository.existsById(id)) {
-            chatRoomRepository.deleteById(id);
-            logger.info("채팅창 삭제 완료 - ID: {}", id);
-            return ResponseEntity.ok().build();
-        }
-        logger.warn("채팅창 삭제 실패 - ID 존재하지 않음: {}", id);
-        return ResponseEntity.notFound().build();
+        chatRoomService.deleteChatRoom(id);
+        return ResponseEntity.ok().build();
     }
 
     // 채팅창 목록 조회
@@ -61,7 +60,7 @@ public class ChatRoomController {
     @GetMapping("/list/{memberId}")
     public ResponseEntity<List<ChatRoomListResDto>> list(@PathVariable String memberId) {
         logger.debug("채팅창 목록 조회 요청");
-        List<ChatRoom> chatRooms = chatRoomRepository.findAllByMember_Id(memberId);
+        List<ChatRoom> chatRooms = chatRoomRepository.findAllByMemberOrderByLastChatTimeDesc(memberId);
         List<ChatRoomListResDto> results = chatRooms.stream()
                 .map(room -> ChatRoomListResDto.builder()
                         .id(room.getId())
